@@ -41,6 +41,10 @@ Widget _imageContainerStart(BuildContext context, String link, String gameName,
     orientationWidth = 0.9;
     orientationHeight = 1.24;
     marginDivider = 2;
+  }else{
+    orientationWidth = 1;
+    orientationHeight = 1;
+    marginDivider = 1;
   }
   return Container(
       width: phoneSize.width * 0.83 * orientationWidth,
@@ -81,6 +85,8 @@ Widget _imageContainerSecond(BuildContext context, String link, String gameName,
   }
   if (MediaQuery.of(context).orientation == Orientation.landscape) {
     orientationWidth = 0.8;
+  }else{
+    orientationWidth = 1;
   }
   return Container(
     margin:
@@ -93,7 +99,7 @@ Widget _imageContainerSecond(BuildContext context, String link, String gameName,
             left: 28.0, right: 28.0, top: 2.0, bottom: 10.0),
         decoration: BoxDecoration(
             border: Border.all(
-              color: Colors.indigo, //kHintColor, so this should be changed?
+              color: Colors.indigo,
             ),
             borderRadius: const BorderRadius.all(Radius.circular(100)),
             image: DecorationImage(image: AssetImage(link), fit: BoxFit.cover)),
@@ -121,6 +127,10 @@ Widget _imageContainerThird(BuildContext context, String link) {
     orientationWidth = 0.7;
     orientationHeight = 2.1;
     marginDivider = 2;
+  }{
+    orientationWidth = 1;
+    orientationHeight = 1;
+    marginDivider = 1;
   }
   return Container(
     width: phoneSize.width * 0.42 * orientationWidth,
