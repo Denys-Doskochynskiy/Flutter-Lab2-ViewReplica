@@ -36,13 +36,13 @@ class BottomAppBarNavigation extends StatelessWidget {
                 _iconBottom(context, Icons.home_filled, heightDevice.height,
                     const MyApp()),
                 _iconBottom(context, Icons.people_sharp, heightDevice.height,
-                    const MyApp()),
+                    const  MyApp()),
                 _iconBottom(context, Icons.search_sharp, heightDevice.height,
-                    const MyApp()),
+                    const  MyApp()),
                 _iconBottom(context, Icons.storage_rounded, heightDevice.height,
-                    const MyApp()),
+                    const  MyApp()),
                 _iconBottom(context, Icons.supervised_user_circle,
-                    heightDevice.height, const MyApp()),
+                    heightDevice.height, const  MyApp()),
               ])),
     );
   }
