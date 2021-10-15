@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lab_2_try/main_view/object/games_obj.dart';
+import 'package:lab_2_try/object/games_obj.dart';
+
 
 Widget _imageContainerSecond(BuildContext context, String link, String gameName,
     String gameShortDescription) {

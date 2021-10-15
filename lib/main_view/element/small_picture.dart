@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lab_2_try/main_view/object/games_obj.dart';
+import 'package:lab_2_try/object/games_obj.dart';
 
 Widget _imageContainerThird(BuildContext context, String link) {
   var phoneSize = MediaQuery.of(context).size;

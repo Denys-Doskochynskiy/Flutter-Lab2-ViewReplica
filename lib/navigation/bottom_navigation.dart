@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lab_2_try/account_profile/account.dart';
 import 'package:lab_2_try/main.dart';
 
 Widget _iconBottom(
@@ -9,7 +8,7 @@ Widget _iconBottom(
       icon: Icon(
         icon,
         size: height * 0.055,
-        color: Color(0xFFf2f2f2),
+        color: const Color(0xFFf2f2f2),
       ),
       onPressed: () {
         Navigator.push(
@@ -37,13 +36,13 @@ class BottomAppBarNavigation extends StatelessWidget {
                 _iconBottom(context, Icons.home_filled, heightDevice.height,
                     const MyApp()),
                 _iconBottom(context, Icons.people_sharp, heightDevice.height,
-                    const Account()),
+                    const MyApp()),
                 _iconBottom(context, Icons.search_sharp, heightDevice.height,
-                    const Account()),
+                    const MyApp()),
                 _iconBottom(context, Icons.storage_rounded, heightDevice.height,
-                    const Account()),
+                    const MyApp()),
                 _iconBottom(context, Icons.supervised_user_circle,
-                    heightDevice.height, const Account()),
+                    heightDevice.height, const MyApp()),
               ])),
     );
   }
